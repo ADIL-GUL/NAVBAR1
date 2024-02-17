@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+</head>
+<style>
+.navbar{
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 30px;
+}
+ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 3px 3px;
+    color: white;
+    margin: 13px 20px;
+}
+.navbar li:hover{
+    color:red
+    ;}
+.search{
+    padding: 14px 55px;
+    float: right;
+}
+input{
+    border-radius: 5px;
+    padding: 3px 35px;
+    
+}
+
+@media (max-width :375px) {
+    li{
+        display: none;
+        
+       
+    }
+    input{
+        padding: 2px 30px;
+    }
+}
+
+@media (max-width :320px) {
+    li{
+        display: none;
+        
+       
+    }
+    input{
+        padding: 1px 10px;
+    }
+}
+@media (max-width :425px) {
+    input{
+        padding: 2px 55px;
+    }
+}
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>sercice</li>
+                <li>contact</li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search here">
+                </div>
+
+            </ul>
+            
+        </nav>
+    </header>
+</body>
+
+</html>
